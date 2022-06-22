@@ -34,4 +34,4 @@ for actual in usa_places:
 expected = {"place name":"Beverly Hills","longitude":"-118.4065","state":"California","state abbreviation":"CA","latitude":"34.0901"}
 assert actual == expected
 
-print("20th June, 2022")
+print("22th June, 2022")
