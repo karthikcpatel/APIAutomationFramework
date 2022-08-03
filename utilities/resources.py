@@ -2,10 +2,16 @@ class APIResources:
     country = 'us/'
     zipcode = '90210'
 
-    api_resources = {'endpoint_usa': 'us/90210',
-                     'endpoint_ind': 'IN/110001'}
+    api_resources = {'endpoint_usa': 'us/90210','endpoint_can':'ca/a0a'}
+
+    expected_response_old = {
+        'endpoint_usa': {"post code": "90210", "country": "United States", "country abbreviation": "US", "places": [{"place name": "Beverly Hills", "longitude": "-118.4065", "state": "California", "state abbreviation": "CA", "latitude": "34.0901"}]}}
 
     expected_response = {
-        'endpoint_usa': {"post code": "90210", "country": "United States", "country abbreviation": "US", "places": [{"place name": "Beverly Hills", "longitude": "-118.4065", "state": "California", "state abbreviation": "CA", "latitude": "34.0901"}]},
-        'endpoint_ind': {"post code": "110001", "country": "India", "country abbreviation": "IN", "places": [{"place name": "Janpath", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Rail Bhawan", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Connaught Place", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Sansadiya Soudha", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Sectt North", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Constitution House", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Eastern Court", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Supreme Court", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Parliament House", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Parliament Street H O", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Laxminarain Mandir", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "New Delhi G P O", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Krishi Bhawan", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Lady Harding Medical College", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Election Commission", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "North Avenue", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Pragati Maidan", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Patiala House", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}, {"place name": "Shastri Bhawan", "longitude": "77.2167", "state": "New Delhi", "state abbreviation": "DL", "latitude": "28.6333"}]}
+        'endpoint_usa': {"post code": "90210", "country": "United States", "country abbreviation": "US", "places": [
+            {"place name": "Beverly Hills", "longitude": "-118.4065", "state": "California", "state abbreviation": "CA",
+             "latitude": "34.0901"}]},
+        'endpoint_can': {"post code": "A0A", "country": "Canada", "country abbreviation": "CA", "places": [
+            {"place name": "Southeastern Avalon Peninsula (Ferryland)", "longitude": "-52.9589",
+             "state": "Newfoundland and Labrador", "state abbreviation": "NL", "latitude": "47.0073"}]}
     }

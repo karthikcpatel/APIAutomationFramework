@@ -28,7 +28,7 @@ print(response_dict)
 usa_places = response_dict['places']
 print(usa_places)
 for actual in usa_places:
-    if x['place name']=="Beverly Hills":
+    if actual['place name']=="Beverly Hills":
         print(actual)
 
 expected = {"place name":"Beverly Hills","longitude":"-118.4065","state":"California","state abbreviation":"CA","latitude":"34.0901"}

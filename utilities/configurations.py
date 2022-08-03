@@ -1,7 +1,7 @@
 import configparser
 
 # Constants
-endpoints = ['endpoint_usa','endpoint_ind']
+endpoints = ['endpoint_usa','endpoint_can']
 
 def get_config():
     config = configparser.ConfigParser()

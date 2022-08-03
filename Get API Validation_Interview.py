@@ -1,6 +1,7 @@
 import json, requests
 
 response = requests.get("https://api.zippopotam.us/us/90210")
+print(response)
 print(response.text)
 print(type(response.text))
 response_dict = json.loads(response.text)

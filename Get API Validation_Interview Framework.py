@@ -3,7 +3,8 @@ from utilities.configurations import *
 from utilities.resources import *
 
 url = get_config()['API']['endpoint_usa']
-response = requests.get(url+'us/90210',verify=False)
+#response = requests.get(url+'us/90210',verify=False)
+response = requests.get(url+APIResources.country+APIResources.zipcode,verify=False)
 response_dict = response.json()
 print(response_dict)
 
