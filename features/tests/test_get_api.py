@@ -14,7 +14,7 @@ def user_hits_get_request():
 
 @when('user receives the response')
 def user_receives_the_response():
-    api_automation.request_is_successful()
+    api_automation.request_successful()
     print("When got executed")
 
 @then('the response should match')

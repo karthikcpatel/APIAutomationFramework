@@ -20,7 +20,7 @@ class APIAutomation:
             response_dict = response.json()
             print(response_dict)
 
-    def request_is_successful(self):
+    def request_successful(self):
         response_code = response.status_code
         if response_code == 200:
             return True
