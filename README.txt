@@ -10,3 +10,5 @@ pytest -v: v stands for verbose that shows more information
 pytest '.py file name' to run a specific python file
 pytest -k creditcard -v -s: to run all tests based on specific keyword
 pytest --html=reports/report.html --self-contained-html: to generate html reports in pytest
+
+#24th August, 2022
