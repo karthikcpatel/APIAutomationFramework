@@ -8,3 +8,9 @@ print(list_places)
 dict_places = (list_places[0])
 final_place = dict_places['place name']
 print(final_place)
+
+for name in list_places:
+    if name['place name'] == 'Beverly Hills':
+        assert name['state'] == 'California'
+        print(name['state'])
+

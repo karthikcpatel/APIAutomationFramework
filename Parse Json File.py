@@ -1,6 +1,6 @@
 import json
 
-with open(r"C:\Miscellaneous\Software Testing Tutorials\Interview Questions & Answers\Miscellaneous Documents\samplejson.json") as file:
+with open(r"C:\KP\My Learnings\STE\Interview Questions & Answers\Miscellaneous Documents\samplejson.json") as file:
     file_dict = json.load(file)
     print(file_dict)
     file_geek = file_dict['Geeks']

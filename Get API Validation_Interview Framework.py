@@ -24,7 +24,7 @@ for endpoint in endpoints:
     response_dict = response.json()
     print(response_dict)
 
-    print("Service Response:-", response.json())
+    print("Actual Response:-", response.json())
     print("Expected Response:-", APIResources.expected_response.__getitem__(endpoint))
 
     assert response.json() == APIResources.expected_response.__getitem__(endpoint)
